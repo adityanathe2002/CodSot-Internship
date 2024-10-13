@@ -1,0 +1,64 @@
+package com.codsoft.SMS.dto;
+
+public class Student {
+
+	private int rollNumber;
+	private String name;
+	private String email;
+	private long contact;
+	private String location;
+	private String grade;
+	
+	public Student(int rollNumber, String name, String email, long contact, String location, String grade) {
+		this.rollNumber = rollNumber;
+		this.name = name;
+		this.email = email;
+		this.contact = contact;
+		this.location = location;
+		this.grade = grade;
+	}
+	
+	public int getRollNumber() {
+		return rollNumber;
+	}
+	public void setRollNumber(int rollNumber) {
+		this.rollNumber = rollNumber;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public long getContact() {
+		return contact;
+	}
+	public void setContact(long contact) {
+		this.contact = contact;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	
+	@Override
+	public String toString() {
+		return "Student [rollNumber=" + rollNumber + ", name=" + name + ", email=" + email + ", contact=" + contact
+				+ ", location=" + location + ", grade=" + grade + "]";
+	}
+}

@@ -1,0 +1,13 @@
+package com.codsoft;
+
+public class StudenController {
+	
+	
+	public static void main(String[] args) {
+		
+		StudentManagementSystem sms=new StudentManagementSystem(null);
+		
+
+	}
+
+}

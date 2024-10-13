@@ -1,0 +1,31 @@
+package com.codsoft;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentManagementSystem{
+	Scanner scanner =new Scanner(System.in);
+	private List<Student>students;
+
+	public StudentManagementSystem() {
+		students =  new ArrayList<>();
+	}
+	
+	public void addStudent(Student student) 
+	{
+		System.err.println("*** Add Student ***");
+		System.out.print("Enter name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter roll number: ");
+        int rollNumber = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+        System.out.print("Enter grade: ");
+        String grade = scanner.nextLine();
+        System.out.print("Enter email: ");
+        String email = scanner.nextLine();
+        System.out.println("Student added successfully.");	
+	}
+	
+
+}

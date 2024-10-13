@@ -1,0 +1,20 @@
+package com.codsoft;
+
+import java.util.Scanner;
+
+public class StudenController {
+	
+	
+	public static void main(String[] args) {
+		
+		StudentManagementSystem sms=new StudentManagementSystem();
+		Scanner scanner =new Scanner(System.in);
+		int option;
+		do {
+			
+		}while (option != 5);
+		 
+
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.codsoft;
+
+public class Student {
+	
+	private int rollNumber;
+	private String name;
+	private long contact;
+	private String location;
+	private String grade;
+	
+	public int getRollNumber() {
+		return rollNumber;
+	}
+	public void setRollNumber(int rollNumber) {
+		this.rollNumber = rollNumber;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getContact() {
+		return contact;
+	}
+	public void setContact(long contact) {
+		this.contact = contact;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	
+	@Override
+	public String toString() {
+		return "Student [rollNumber=" + rollNumber + ", name=" + name + ", contact=" + contact + ", location="
+				+ location + ", grade=" + grade + "]";
+	}
+}

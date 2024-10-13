@@ -1,0 +1,9 @@
+package com.codsoft;
+
+import java.util.List;
+
+public class StudentManagementSystem{
+	
+	private List<Student>students;
+
+}

@@ -1,0 +1,65 @@
+package com.codsoft;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentManagementSystem {
+	Scanner scanner = new Scanner(System.in);
+	private List<Student> students;
+
+	public StudentManagementSystem() {
+		students = new ArrayList<>();
+	}
+
+	//Student Add Method
+	public void addStudent() 
+	{
+		System.out.println("*** Add Student ***");
+		System.out.print("Enter roll number: ");
+	    int rollNumber = scanner.nextInt();
+	        
+		System.out.print("Enter name: ");
+        String name = scanner.nextLine();
+        scanner.nextLine();
+        
+        System.out.print("Enter email: ");
+        String email = scanner.nextLine();
+        
+        System.out.print("Enter Contact Number: ");
+        long contact=scanner.nextLong();
+        
+        scanner.nextLine(); // Consume newline
+        System.out.print("Enter grade: ");
+        String grade = scanner.nextLine();
+        
+        System.out.print("Enter Location: ");
+        String location=scanner.nextLine();
+        
+        Student student = new Student(rollNumber,name, email, contact, grade,  location);
+       
+        students.add(student);
+        System.err.println("Student added successfully.");
+	}
+	
+	// Remove Student  by roll number
+	public void removeStudent() {
+		System.out.print("Enter roll number of student to remove: ");
+        int rollNumToRemove = scanner.nextInt();
+        Student studentToRemove = null;
+        
+        for (Student student : students) {
+			if(student.getRollNumber() == rollNumToRemove) {
+				studentToRemove = student;
+				break;
+			}
+		}
+        if (studentToRemove != null) {
+            students.remove(studentToRemove);
+            System.out.println("Student with roll number " + rollNumToRemove + " has been removed.");
+        } else {
+            System.out.println("Student with roll number " + rollNumToRemove + " not found.");
+        }
+	}
+
+}

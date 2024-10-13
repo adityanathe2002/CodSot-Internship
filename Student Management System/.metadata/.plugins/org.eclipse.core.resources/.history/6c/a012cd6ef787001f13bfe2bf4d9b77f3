@@ -1,0 +1,22 @@
+package com.codsoft;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentManagementSystem{
+	
+	private List<Student>students;
+
+	public StudentManagementSystem() {
+		students =  new ArrayList<>();
+	}
+	
+	public void addStudent(Student student) 
+	{
+		
+		
+		students.add(student);
+	}
+	
+
+}

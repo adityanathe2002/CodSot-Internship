@@ -1,0 +1,59 @@
+package com.codsoft;
+
+import java.util.Scanner;
+
+public class StudenController {
+
+	public static void main(String[] args) {
+
+		StudentManagementSystem sms = new StudentManagementSystem();
+		Scanner scanner = new Scanner(System.in);
+		int option;
+		do {
+
+			System.err.println("\n******Student Management System******");
+			System.out.println("1. Add Student");
+			System.out.println("2. Remove Student");
+			System.out.println("3. Search for Student");
+			System.out.println("4. Display All Students");
+			System.out.println("5.Edit Student");
+			System.out.println("6. Exit");
+			System.out.print("Enter your choice: ");
+			option = scanner.nextInt();
+			scanner.nextLine();
+
+			switch (option) {
+			case 1: {
+				sms.addStudent(student);
+				break;
+			}
+			case 2: {
+
+				break;
+			}
+			case 3: {
+
+				break;
+			}
+			case 4: {
+
+				break;
+			}
+			case 5: {
+
+				break;
+			}
+			case 6: {
+
+				break;
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + option);
+			}
+
+		} while (option != 5);
+		scanner.close();
+
+	}
+
+}

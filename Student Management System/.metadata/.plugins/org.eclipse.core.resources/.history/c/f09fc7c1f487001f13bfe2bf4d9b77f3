@@ -1,0 +1,9 @@
+package com.codsoft;
+
+public class Student {
+	private int rollNumber;
+	private String name;
+	private long contact;
+	private String grade;
+
+}
